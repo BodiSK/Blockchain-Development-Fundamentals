@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getVoterStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "voteStatus",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voterChoice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_choice",
+						"type": "uint256"
+					}
+				],
+				"name": "registerVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "hasVoted",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "choice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity Basics/Voting.sol": "Voting"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity Basics/Voting.sol": {
+			"keccak256": "0x6e876708b47650e69c4015639b0ca22f97dfad1d50c52e906b5b829ccf80f634",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://10eafaf88ee76d621705c5bb741389df7a689eaba930799c7a4b1addc1916768",
+				"dweb:/ipfs/QmdHdfNjyw7xVhKfjXncr94DdAXQeyVVEddSHo9aac286a"
+			]
+		}
+	},
+	"version": 1
+}
