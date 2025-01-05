@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "redeemPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "customer",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "rewardPoints",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol": "BaseLoyaltyProgram"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol": {
+			"keccak256": "0xfcd1516ecc2e6dc2754dd6c504d71f20315f284132f5558fb317df2cf65ede54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d79d826e46d269463210b3be9001433642350cae51752ef1ad6b446d1a1a401d",
+				"dweb:/ipfs/QmV4QxCpTHRpMaqHwJPLXUEMFS1VxC1DgJQqgGrtB1Wykp"
+			]
+		},
+		"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol": {
+			"keccak256": "0x3c7f0f6b50829bf796e9d289e56e8010c4f1a2bb8d49c1ab674a0ddd0f5545f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e68a5dc863b3dd30614e13949b39452b7810b54a341d7989731b49eee69f437a",
+				"dweb:/ipfs/QmXLQ1tP9qA7S2x1SK6oS8pvVjaQprL6vrKmdfyyYfkqec"
+			]
+		}
+	},
+	"version": 1
+}

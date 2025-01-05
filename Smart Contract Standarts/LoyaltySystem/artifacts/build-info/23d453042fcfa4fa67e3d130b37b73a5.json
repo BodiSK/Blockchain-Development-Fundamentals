@@ -1,0 +1,509 @@
+{
+	"id": "23d453042fcfa4fa67e3d130b37b73a5",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.28",
+	"solcLongVersion": "0.8.28+commit.7893614a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity 0.8.28;\r\n\r\nimport \"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol\";\r\n\r\nabstract contract BaseLoyaltyProgram is ILoyaltyPoints{\r\n\r\n}"
+			},
+			"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity 0.8.28;\r\n\r\n\r\ninterface  ILoyaltyPoints {\r\n    function rewardPoints(address customer, uint256 amount) external;\r\n    function redeemPoints(address customer, uint256 amount) external;\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol": {
+				"BaseLoyaltyProgram": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "customer",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								}
+							],
+							"name": "redeemPoints",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "customer",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								}
+							],
+							"name": "rewardPoints",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"redeemPoints(address,uint256)": "b85da8d2",
+							"rewardPoints(address,uint256)": "6a7dfd1a"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"customer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"redeemPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"customer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"rewardPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol\":\"BaseLoyaltyProgram\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol\":{\"keccak256\":\"0xfcd1516ecc2e6dc2754dd6c504d71f20315f284132f5558fb317df2cf65ede54\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d79d826e46d269463210b3be9001433642350cae51752ef1ad6b446d1a1a401d\",\"dweb:/ipfs/QmV4QxCpTHRpMaqHwJPLXUEMFS1VxC1DgJQqgGrtB1Wykp\"]},\"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol\":{\"keccak256\":\"0x3c7f0f6b50829bf796e9d289e56e8010c4f1a2bb8d49c1ab674a0ddd0f5545f0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e68a5dc863b3dd30614e13949b39452b7810b54a341d7989731b49eee69f437a\",\"dweb:/ipfs/QmXLQ1tP9qA7S2x1SK6oS8pvVjaQprL6vrKmdfyyYfkqec\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			},
+			"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol": {
+				"ILoyaltyPoints": {
+					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "customer",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								}
+							],
+							"name": "redeemPoints",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "customer",
+									"type": "address"
+								},
+								{
+									"internalType": "uint256",
+									"name": "amount",
+									"type": "uint256"
+								}
+							],
+							"name": "rewardPoints",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"redeemPoints(address,uint256)": "b85da8d2",
+							"rewardPoints(address,uint256)": "6a7dfd1a"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"customer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"redeemPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"customer\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"rewardPoints\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol\":\"ILoyaltyPoints\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol\":{\"keccak256\":\"0x3c7f0f6b50829bf796e9d289e56e8010c4f1a2bb8d49c1ab674a0ddd0f5545f0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e68a5dc863b3dd30614e13949b39452b7810b54a341d7989731b49eee69f437a\",\"dweb:/ipfs/QmXLQ1tP9qA7S2x1SK6oS8pvVjaQprL6vrKmdfyyYfkqec\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol": {
+				"ast": {
+					"absolutePath": "Smart Contract Standarts/LoyaltySystem/BaseLoyaltyProgram.sol",
+					"exportedSymbols": {
+						"BaseLoyaltyProgram": [
+							5
+						],
+						"ILoyaltyPoints": [
+							22
+						]
+					},
+					"id": 6,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".28"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:23:0"
+						},
+						{
+							"absolutePath": "Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol",
+							"file": "Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol",
+							"id": 2,
+							"nameLocation": "-1:-1:-1",
+							"nodeType": "ImportDirective",
+							"scope": 6,
+							"sourceUnit": 23,
+							"src": "62:67:0",
+							"symbolAliases": [],
+							"unitAlias": ""
+						},
+						{
+							"abstract": true,
+							"baseContracts": [
+								{
+									"baseName": {
+										"id": 3,
+										"name": "ILoyaltyPoints",
+										"nameLocations": [
+											"173:14:0"
+										],
+										"nodeType": "IdentifierPath",
+										"referencedDeclaration": 22,
+										"src": "173:14:0"
+									},
+									"id": 4,
+									"nodeType": "InheritanceSpecifier",
+									"src": "173:14:0"
+								}
+							],
+							"canonicalName": "BaseLoyaltyProgram",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": false,
+							"id": 5,
+							"linearizedBaseContracts": [
+								5,
+								22
+							],
+							"name": "BaseLoyaltyProgram",
+							"nameLocation": "151:18:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 6,
+							"src": "133:60:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "35:158:0"
+				},
+				"id": 0
+			},
+			"Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol": {
+				"ast": {
+					"absolutePath": "Smart Contract Standarts/LoyaltySystem/ILoyaltyPoints.sol",
+					"exportedSymbols": {
+						"ILoyaltyPoints": [
+							22
+						]
+					},
+					"id": 23,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 7,
+							"literals": [
+								"solidity",
+								"0.8",
+								".28"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:23:1"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "ILoyaltyPoints",
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"fullyImplemented": false,
+							"id": 22,
+							"linearizedBaseContracts": [
+								22
+							],
+							"name": "ILoyaltyPoints",
+							"nameLocation": "75:14:1",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"functionSelector": "6a7dfd1a",
+									"id": 14,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "rewardPoints",
+									"nameLocation": "106:12:1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 12,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 9,
+												"mutability": "mutable",
+												"name": "customer",
+												"nameLocation": "127:8:1",
+												"nodeType": "VariableDeclaration",
+												"scope": 14,
+												"src": "119:16:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 8,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "119:7:1",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 11,
+												"mutability": "mutable",
+												"name": "amount",
+												"nameLocation": "145:6:1",
+												"nodeType": "VariableDeclaration",
+												"scope": 14,
+												"src": "137:14:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 10,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "137:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "118:34:1"
+									},
+									"returnParameters": {
+										"id": 13,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "161:0:1"
+									},
+									"scope": 22,
+									"src": "97:65:1",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "b85da8d2",
+									"id": 21,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "redeemPoints",
+									"nameLocation": "177:12:1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 19,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 16,
+												"mutability": "mutable",
+												"name": "customer",
+												"nameLocation": "198:8:1",
+												"nodeType": "VariableDeclaration",
+												"scope": 21,
+												"src": "190:16:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 15,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "190:7:1",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 18,
+												"mutability": "mutable",
+												"name": "amount",
+												"nameLocation": "216:6:1",
+												"nodeType": "VariableDeclaration",
+												"scope": 21,
+												"src": "208:14:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 17,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "208:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "189:34:1"
+									},
+									"returnParameters": {
+										"id": 20,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "232:0:1"
+									},
+									"scope": 22,
+									"src": "168:65:1",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 23,
+							"src": "64:178:1",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "35:207:1"
+				},
+				"id": 1
+			}
+		}
+	}
+}
