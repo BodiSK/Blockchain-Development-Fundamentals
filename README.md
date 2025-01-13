@@ -1,2 +1,2 @@
 # Blockchain-Development-Fundamentals
-Softuni course November 2023
+Softuni course November 2024
