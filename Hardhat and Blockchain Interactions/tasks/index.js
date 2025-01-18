@@ -45,7 +45,7 @@ task("accounts", "Prints the list of accounts",
         console.log(receipt);
     })
 
-// Homewoer tasks mint and transfer
+// Homework tasks mint and transfer
 
     task("mint", "Mints ERC20 tokens to given address")
     .addParam("contract", "address of the contract")
